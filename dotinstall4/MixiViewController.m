@@ -26,4 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonPush:(id)sender {
+    // self.labelText.text = @"You pushed Me!!";
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    NSDate *now = [NSDate date];
+    [formatter setDateFormat:@"HH:mm:ss"];
+    self.labelText.text = [formatter stringFromDate:now];
+}
 @end

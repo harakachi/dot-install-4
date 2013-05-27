@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MixiViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *buttonPush;
+@property (weak, nonatomic) IBOutlet UILabel *labelText;
+- (IBAction)buttonPush:(id)sender;
 
 @end
